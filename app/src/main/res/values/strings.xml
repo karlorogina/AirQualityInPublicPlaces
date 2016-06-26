@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Kvaliteta zraka u kafićima</string>
+    <string name="title_activity_maps">Kvaliteta zraka u kafićima</string>
+    <string name="ocijeni">Ocijeni</string>
+    <string name="izrazito_lo_a_kvaliteta_zraka_1">Izrazito loša kvaliteta zraka (1)</string>
+    <string name="jako_zadimljeno_2">Jako zadimljeno (2)</string>
+    <string name="zadimljeno_3">Zadimljeno (3)</string>
+    <string name="ist_zrak_4">Čist zrak (4)</string>
+    <string name="izvrsna_kvaliteta_zraka_5">Izvrsna kvaliteta zraka (5)</string>
+    <string name="kakva_je_kvaliteta_zraka">Kakva je kvaliteta zraka?</string>
+    <string name="ocjena_korisnika">Ocjena korisnika:</string>
+</resources>

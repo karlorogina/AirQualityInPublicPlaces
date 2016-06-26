@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RatePOIActivity"
+    android:background="@drawable/bkg1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/restaurantName"
+        android:textStyle="bold"
+        android:textIsSelectable="false"
+        android:textSize="35sp"
+        android:layout_alignParentTop="true"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="125sp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/rating"
+        android:theme="@style/AlertDialog.AppCompat.Light"
+        android:autoText="false"
+        android:textSize="20sp"
+        android:gravity="left"
+        android:layout_alignEnd="@+id/restaurantName"
+        android:layout_below="@+id/restaurantName"
+        android:layout_alignParentStart="true"
+        android:text="@string/ocjena_korisnika"
+        android:textStyle="bold"
+        android:textColor="#2f2f2f" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/kakva_je_kvaliteta_zraka"
+        android:id="@+id/textView"
+        android:textStyle="bold"
+        android:layout_gravity="right"
+        android:layout_below="@+id/rating"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:id="@+id/ratingRadioGroup"
+        android:layout_above="@+id/postRatingBtn"
+        android:layout_alignEnd="@+id/rating"
+        android:layout_below="@+id/textView">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/izvrsna_kvaliteta_zraka_5"
+            android:id="@+id/radioButton1"
+            android:checked="true"
+            android:layout_weight="1"
+            android:textColor="#0011cc"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/ist_zrak_4"
+            android:id="@+id/radioButton2"
+            android:layout_weight="1"
+            android:textColor="#2239e4"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/zadimljeno_3"
+            android:id="@+id/radioButton3"
+            android:layout_weight="1"
+            android:textColor="#40435e"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/jako_zadimljeno_2"
+            android:id="@+id/radioButton4"
+            android:layout_weight="1"
+            android:textColor="#353538"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/izrazito_lo_a_kvaliteta_zraka_1"
+            android:id="@+id/radioButton5"
+            android:layout_weight="1"
+            android:textColor="#151516"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ocijeni"
+        android:id="@+id/postRatingBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#FFFF9900"
+        android:textStyle="normal|bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp" />
+</RelativeLayout>
