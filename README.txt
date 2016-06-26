@@ -1,1 +1,7 @@
+Android aplikacija za suradno opažanje kvalitete zraka u javnim prostorima
+
+Aplikacija se sastoji od klijentske i poslužiteljske komponente. Klijentska komponenta omogućava unos novih očitanja kvalitete zraka i pregled trenutne kvalitete zraka u javnim prostorima u blizini korisnika. Poslužiteljska aplikacija omogućava pohranjivanje novih očitanja kvalitete zraka te pristup očitanjima iz povijesti. Za pohranu podataka na poslužiteljskoj strani koristi se baza podataka PostgreSQL. Komunikacija između klijentske i poslužiteljske aplikacije ostvarena je korištenjem sučelja REST. Razmijenjene poruke su u formatu GeoJSON. Podaci o ugostiteljskim objektima i njihovim lokacijama dohvaćaju se iz javno dostupnih podataka prikupljenih projektom OpenStreetMap. 
+
+An Android Application for Crowdsensing of Air Quality in Public Places
+
 Application consists of client and server components. The client component allows entry of new air quality readings and review of current air quality in the public places near the user location. Server component is used to store air quality readings and access readings from history. To store data on the server side is used PostgreSQL database. Communication between the client and server is achieved using the REST interface. Exchanged messages are in GeoJSON format. Information about restaurants and their locations are derived from publicly available data collected by the project OpenStreetMap.
